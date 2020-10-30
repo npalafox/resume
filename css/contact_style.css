@@ -1,0 +1,55 @@
+body{
+    font-family: 'Raleway', sans-serif; /* Test for this*/
+  }
+  /*
+  footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+  } */
+  
+  /*Begin your code here*/
+  /*Keyframes for animation*/
+  
+  /* @-webkit-keyframes logo_wiggle{
+    0% {width:25px;}
+    100% {width:420px;}
+  
+  }
+  
+  @keyframes logo_wiggle{
+    0% {width:25px;}
+    100% {width:420px;}
+  } */
+
+ 
+  
+  /* Navbar 
+  header{
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+*/
+  
+  
+  @media screen and (min-width: 850px){
+ 
+  }
+  
+  
+ 
+  @media screen and (prefers-reduced-motion: reduce){
+   
+  }
