@@ -2,18 +2,40 @@ body {
   font-family: 'Cardo', serif;
  }
  
- h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
  }
-  /*
-  footer{
+  
+footer{
     background-color: black;
     color: white;
     padding: 30px;
     text-align: center;
-  } */
+  } 
+
+header{
+    background:gray;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
   
+.nav_links{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+  
+  
+.nav_item a:hover, a:focus{
+    color: white;
+    text-decoration: underline;
+
+}
+
   /*Begin your code here*/
   /*Keyframes for animation*/
   
@@ -29,25 +51,20 @@ body {
   } */
 
  
-  
-  /* Navbar 
-  header{
-    background: #fff;
-    border-bottom: 3px solid #50C7C7;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .nav_links{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-*/
-  
+
+
+ /* 
+nav{
+    border-bottom: 3px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    background-color:gray;
+}
+
+.nav_item a:hover, a:focus{
+  color: white;
+  text-decoration: underline;
+
   
   @media screen and (min-width: 850px){
  
@@ -58,3 +75,4 @@ body {
   @media screen and (prefers-reduced-motion: reduce){
    
   }
+  */
