@@ -1,12 +1,24 @@
 body {
   font-family: 'Cardo', serif;
+  color: #c0ccd4;
  }
  
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
- }
-  
+  color: #ffce00;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.basic {
+  background: #484d5c;
+  border: 5px solid black;
+  border-style: round;
+}
+
 footer{
     background-color: black;
     color: white;
@@ -15,7 +27,7 @@ footer{
   } 
 
 header{
-    background:gray;
+    background: black;
     border-bottom: 3px solid black;
     display: flex;
     flex-direction: row;
@@ -25,54 +37,54 @@ header{
   
 .nav_links{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     flex-direction: row;
+    width: 95vw;
+    padding: 15px 3px;
+}
+
+.nav_item a{
+  color: white;
 }
   
-  
 .nav_item a:hover, a:focus{
-    color: white;
+    color: #11d3e8;
     text-decoration: underline;
 
 }
 
-  /*Begin your code here*/
-  /*Keyframes for animation*/
-  
-  /* @-webkit-keyframes logo_wiggle{
-    0% {width:25px;}
-    100% {width:420px;}
-  
-  }
-  
-  @keyframes logo_wiggle{
-    0% {width:25px;}
-    100% {width:420px;}
-  } */
-
- 
-
-
- /* 
-nav{
-    border-bottom: 3px solid black;
-    padding: 10px 20px;
-    text-align: center;
-    background-color:gray;
+.information {
+  display: grid;
 }
 
-.nav_item a:hover, a:focus{
-  color: white;
-  text-decoration: underline;
+#main-photos, #family-photos, #univ-photos, #facts-photos{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-  
-  @media screen and (min-width: 850px){
+img {
+  width: 100%;
+}
  
+  @media screen and (min-width: 850px){
+
+    .information {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+
+
+    #main-photos, #family-photos, #univ-photos, #facts-photos{
+  
+      grid-template-columns: 1fr 1fr;
+
+    }
+  
   }
   
-  
  
-  @media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce){
    
   }
-  */
