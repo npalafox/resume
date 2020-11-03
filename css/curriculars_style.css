@@ -35,23 +35,21 @@ header{
     background: black;
     border-bottom: 3px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
   
 .nav_links{
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
     width: 95vw;
     padding: 15px 3px;
-    flex-wrap: wrap;
 }
 .active a{
   color:#11d3e8 !important;
   background-color: #454040d4;
-  padding: 20px 10px;
 
 }
 
@@ -64,52 +62,39 @@ header{
 .nav_item a:hover, a:focus{
     color: #11d3e8;
 }
-  /*
-  footer{
-    background-color: black;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  } */
-  
-  /*Begin your code here*/
-  /*Keyframes for animation*/
-  
-  /* @-webkit-keyframes logo_wiggle{
-    0% {width:25px;}
-    100% {width:420px;}
-  
-  }
-  
-  @keyframes logo_wiggle{
-    0% {width:25px;}
-    100% {width:420px;}
-  } */
 
- 
-  
-  /* Navbar 
+
+.information {
+  display: grid;
+}
+
+#main-photos, #family-photos, #univ-photos, #facts-photos{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+ /* NEED TO FINISH */
+@media screen and (min-width: 850px){
   header{
-    background: #fff;
-    border-bottom: 3px solid #50C7C7;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
   }
-  
   .nav_links{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
   }
-*/
-  
-  
-  @media screen and (min-width: 850px){
- 
+  .active a{
+    padding: 20px 10px;
   }
+}
   
   
  
