@@ -9,13 +9,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffce00;
 }
 
+h1, h2{
+  font-size: xx-large;
+  padding: 3px;
+}
+
 ul {
   list-style-type: square;
 }
 
 .basic {
   background: #484d5c;
-  border: 5px solid black;
+  border: 3px solid black;
   border-style: round;
 }
 
@@ -41,17 +46,26 @@ header{
     flex-direction: row;
     width: 95vw;
     padding: 15px 3px;
+    flex-wrap: wrap;
+}
+.active a{
+  color:#11d3e8 !important;
+  background-color: #454040d4;
+  padding: 20px 10px;
+
 }
 
 .nav_item a{
-  color: white;
+  color: #ffce00;
+  font-size: larger;
+  text-decoration: none;
 }
   
 .nav_item a:hover, a:focus{
     color: #11d3e8;
-    text-decoration: underline;
 
 }
+
 
 .information {
   display: grid;
@@ -65,7 +79,11 @@ header{
 img {
   width: 100%;
 }
- 
+
+
+
+
+ /* NEED TO FINISH */
   @media screen and (min-width: 850px){
 
     .information {
@@ -77,12 +95,28 @@ img {
 
 
     #main-photos, #family-photos, #univ-photos, #facts-photos{
-  
+      display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+    #main-photos img:first-child {
 
     }
-  
-  }
+
+    #main-photos img:last-child {
+
+    }
+
+    #family-photos{
+      display: flex;
+    }
+    
+    #univ-photos{
+
+
+    }
+    #facts-photos{
+
+    }
   
  
 @media screen and (prefers-reduced-motion: reduce){
