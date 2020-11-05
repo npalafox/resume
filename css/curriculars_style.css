@@ -18,7 +18,13 @@ ul {
   list-style-type: square;
 }
 
-.basic {
+#main {
+  text-align: center;
+  background-color: #231f1f;
+  border-bottom: 5px solid #ffce00;
+}
+
+.extra {
   background: #484d5c;
   border: 3px solid black;
   border-style: round;
@@ -47,6 +53,8 @@ header{
     width: 95vw;
     padding: 15px 3px;
 }
+
+/* FIX FOR ALL STYLES */
 .active a{
   color:#11d3e8 !important;
   background-color: #454040d4;
