@@ -1,3 +1,48 @@
+
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  margin-left:20%;
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 35vh;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #ffce00;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
 body {
   font-family: 'Cardo', serif;
   color: #c0ccd4;
@@ -9,16 +54,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffce00;
 }
 
-h1, h2{
+form {
+  border: 3px solid black;
+}
+
+legend{
+  font-family: 'Oswald', sans-serif;
   font-size: xx-large;
-  padding: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffce00;
 }
 
-ul {
-  list-style-type: square;
-}
-
-.basic {
+#main{
   background: #484d5c;
   border: 3px solid black;
   border-style: round;
@@ -27,9 +75,31 @@ ul {
 footer{
     background-color: black;
     color: white;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
   } 
+footer ul {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style-type: none;
+  padding:0px;
+}
+
+footer a{
+  color: #ffce00;
+  font-size: medium;
+  text-decoration: none;
+}
+
+footer a:hover, a:focus{
+  color: white;
+}
+
+footer h4{
+  padding:0px;
+  font-size: large;
+}
 
 header{
     background: black;
@@ -47,9 +117,10 @@ header{
     width: 95vw;
     padding: 15px 3px;
 }
+
 .active a{
-  color:#11d3e8 !important;
-  background-color: #454040d4;
+  color: white !important;
+  background-color: #484d5c;
 
 }
 
@@ -60,7 +131,7 @@ header{
 }
   
 .nav_item a:hover, a:focus{
-    color: #11d3e8;
+    color: white;
 }
 
 
@@ -68,10 +139,6 @@ header{
   display: grid;
 }
 
-#main-photos, #family-photos, #univ-photos, #facts-photos{
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
 img {
   width: 100%;
@@ -94,7 +161,11 @@ img {
   .active a{
     padding: 20px 10px;
   }
+
+  footer ul{
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
-  
   
 

@@ -43,11 +43,33 @@ ul {
 }
 
 footer{
-    background-color: black;
-    color: white;
-    padding: 30px;
-    text-align: center;
-  } 
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+} 
+footer ul {
+display:flex;
+justify-content: space-between;
+flex-direction: column;
+list-style-type: none;
+padding:0px;
+}
+
+footer a{
+color: #ffce00;
+font-size: medium;
+text-decoration: none;
+}
+
+footer a:hover, a:focus{
+color: white;
+}
+
+footer h4{
+padding:0px;
+font-size: large;
+}
 
 header{
     background: black;
@@ -66,8 +88,8 @@ header{
     padding: 15px 3px;
 }
 .active a{
-  color:#11d3e8 !important;
-  background-color: #454040d4;
+  color: white !important;
+  background-color: #484d5c;
 
 }
 
@@ -78,7 +100,7 @@ header{
 }
   
 .nav_item a:hover, a:focus{
-    color: #11d3e8;
+    color: white;
 }
 
 
@@ -120,6 +142,11 @@ img {
       grid-template-rows: 1fr 1fr;
     }
 
+    footer ul{
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
 
 
     #main-photos, #family-photos, #univ-photos, #facts-photos{
@@ -152,4 +179,4 @@ img {
     animation: none;
   
   }
-}
+  }

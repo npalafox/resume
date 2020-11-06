@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_style.css">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
     <title>Contact Me!</title>
   </head>
@@ -16,59 +16,39 @@
           <li class="nav_item"><a href="index.html"> Home </a></li>
           <li class="nav_item"><a href="extra_curriculars.html"> Extra Curriculars </a></li>
           <li class="nav_item"><a href="experience.html"> Work Experience </a></li>
-          <li class="nav_item"><a href="coursework.html"> Coursework </a></li>
           <li class="nav_item active"><a href="contact.html"> Contact Me! </a></li>
         </ul>
     </nav>
   </header>
-  <main class="about" id="skip" tabindex="0">
-    <h1>Super Slick Co.</h1>
-    <p>We're Super Slick Co. and we like to make all your stuff look like a million bucks. How? Through the power of creativity and trendiness! We sell out so you don't have to.</p>
+  <body>
+    <div id="main">
+      <form action="https://formspree.io/f/mdopzbrz" method="POST">
+      <fieldset>
+      <legend><h1>Contact Me!</h1></legend>
 
-    <h2 id = "pricing">Pricing</h2>
-      <div class="pricing">
-        <div class="card">
-          <header><h3>$20</h3></header>
-          <ul>
-            <li>"Pretty Cool" package</li>
-            <li>Your customers will dig it!</li>
-            <li>50 colors to pick from</li>
-          </ul>
-          <button>Buy</button>
-        </div>
-        <div class="card card_big">
-          <header><h3>$35</h3></header>
-          <ul>
-            <li>"Very Cool" package</li>
-            <li>Your customers will be so hyped for your product!</li>
-            <li>150 colors and patterns to pick from</li>
-          </ul>
-          <button>Buy</button>
-        </div>
-        <div class="card">
-          <header><h3>$50</h3></header>
-          <ul>
-            <li>"Ultra Cool" package</li>
-            <li>You will be setting the trends!</li>
-            <li>500 colors and patterns to pick from</li>
-          </ul>
-          <button>Buy</button>
-        </div>
-      </div>
+      <label for="name_id">Your Name</label>
+      <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
 
-      <h2 id = "gallery">Gallery</h2>
-        <div class="gallery"> 
-          <img id="image1" src="images/sample.jpg" alt="" />
-          <img id="image2" src="images/sample.jpg" alt="" />
-          <img id="image3" src="images/sample.jpg" alt="" />
-          <img id="image4" src="images/sample.jpg" alt="" />
-          <img id="image5" src="images/sample.jpg" alt="" />
-        </div>
-      </main>
+      <label for="email_id">Your Email</label>
+      <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
 
-    <footer>
-      <p>University of Michigan School of Information <br/>
-        &copy; Colleen van Lent, Drew Asselin - Web Design 2019-2020</p>
-    </footer>
-  </body>
-</html>
+      <label for="msg">Leave A Message</label>
+      <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+      <input type="submit" value = "Submit">
+    </fieldset>
+    </form>
+
+      <footer>
+        <h4> Contact Me!</h4>
+        <ul>
+          <li> <a href="https://www.linkedin.com/in/nikolas-palafox/" target=_blank>
+            LinkedIn</a>
+          </li>
+          <li>
+            <a href="mailto:npalafox@umich.edu" target=_blank>
+              Email</a>
+          </li>
+      </footer>
+    </body>
+  </html>

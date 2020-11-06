@@ -30,12 +30,38 @@ ul {
   border-style: round;
 }
 
+.extra a{
+  color: #ffce00;
+}
+
 footer{
     background-color: black;
     color: white;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
   } 
+footer ul {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style-type: none;
+  padding:0px;
+}
+
+footer a{
+  color: #ffce00;
+  font-size: medium;
+  text-decoration: none;
+}
+
+footer a:hover, a:focus{
+  color: white;
+}
+
+footer h4{
+  padding:0px;
+  font-size: large;
+}
 
 header{
     background: black;
@@ -54,10 +80,10 @@ header{
     padding: 15px 3px;
 }
 
-/* FIX FOR ALL STYLES */
+
 .active a{
-  color:#11d3e8 !important;
-  background-color: #454040d4;
+  color: white !important;
+  background-color: #484d5c;
 
 }
 
@@ -68,17 +94,12 @@ header{
 }
   
 .nav_item a:hover, a:focus{
-    color: #11d3e8;
+    color: white;
 }
 
 
 .information {
   display: grid;
-}
-
-#main-photos, #family-photos, #univ-photos, #facts-photos{
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 img {
@@ -101,5 +122,10 @@ img {
   }
   .active a{
     padding: 20px 10px;
+  }
+
+  footer ul{
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
