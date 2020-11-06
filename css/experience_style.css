@@ -86,6 +86,7 @@ header{
 .active a{
   color: white !important;
   background-color: #484d5c;
+  text-transform: uppercase;
 
 }
 
@@ -115,8 +116,8 @@ img {
 @media screen and (min-width: 850px){
 
   .information{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display:flex;
+    flex-direction: row;
     
   }
   header{

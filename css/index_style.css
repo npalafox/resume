@@ -90,6 +90,7 @@ header{
 .active a{
   color: white !important;
   background-color: #484d5c;
+  text-transform: uppercase;
 
 }
 
