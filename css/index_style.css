@@ -127,6 +127,17 @@ img {
   width: 100%;
 }
 
+a {
+  color: #ffce00;
+  font-size: large;
+}
+
+.basic p:last-child {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 
 
