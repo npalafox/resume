@@ -156,7 +156,20 @@ img {
     border-radius: 25px;
   }
 
-  div {
-    padding-bottom: 30px;
+  .information {
+    display: grid;
+    grid-template-rows: 1fr 30px 1fr 30px 1fr 20px;
+  }
+
+  .academics {
+    grid-row: 3;
+  }
+
+  #main {
+    grid-row:1
+  }
+
+  .athletic {
+    grid-row: 5;
   }
 }
