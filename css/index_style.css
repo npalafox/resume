@@ -189,6 +189,8 @@ header{
 
 img {
   width: 100%;
+  border-style: round;
+  border-radius:10px;
 }
 
 a {
