@@ -123,6 +123,7 @@ img {
     flex-direction: row;
     
   }
+
   header{
     flex-direction: row;
     justify-content: flex-end;
