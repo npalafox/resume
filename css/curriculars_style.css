@@ -169,7 +169,7 @@ img {
 
   .information {
     display: grid;
-    grid-template-rows: 1fr 1px 1fr 10px 1fr 20px;
+    grid-template-rows: 1fr 150px 1fr 150px 1fr 20px;
   }
 
   .academics {
@@ -184,13 +184,13 @@ img {
     grid-row: 5;
   }
 
-  .parallax {
+  .parallax{
     background-image: url('field.jpg');
     background-color: black;
-    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 700px;
   }
 }
