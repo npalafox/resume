@@ -221,3 +221,10 @@ header{
     min-height: 1000px;
   }
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+  #logo {
+    animation: none;
+  
+  }
+}

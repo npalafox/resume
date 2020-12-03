@@ -10,12 +10,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  padding:5px;
+  padding-bottom:100px;
+  padding-left:100px;
+  padding-right: 100px;
+  font-size: larger;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 h1, h2{
   font-size: xx-large;
-  padding: 3px;
+  padding: 25px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 ul {
@@ -112,16 +121,58 @@ img {
   width: 100%;
 }
 
+.ia {
+  background-image: url('code.jpeg');
+  opacity: .8;
+}
 
+.ia:hover {
+  background: #484d5c;
+}
+
+.owner {
+  background-image: url('pm.jpg');
+  opacity: .8;
+}
+
+.owner:hover {
+  background: #484d5c;
+}
+
+.strategy {
+  background-image: url('chess.jpg');
+  opacity: .8;
+}
+
+.strategy:hover {
+  background: #484d5c;
+}
 
 
  /* NEED TO FINISH */
 @media screen and (min-width: 850px){
 
+
   .information{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    
+    background-color: black;
+    padding:10px;
+  }
+
+  .job {
+    border: 3px solid black;
+    border-style: round;
+    border-radius: 25px;
+    margin:15px;
+  }
+
+
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
   }
 
   header{
