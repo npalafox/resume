@@ -169,7 +169,7 @@ img {
 
   .information {
     display: grid;
-    grid-template-rows: 1fr 150px 1fr 150px 1fr 20px;
+    grid-template-rows: 1fr 250px 1fr 250px 1fr 20px;
   }
 
   .academics {
@@ -191,6 +191,6 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 1000px;
   }
 }
