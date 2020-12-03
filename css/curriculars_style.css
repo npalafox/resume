@@ -5,14 +5,14 @@ body {
   
  }
 @-webkit-keyframes ball_move{
-  from {left: 0px;}
-  to {left: 500px;}
+  from {left: -150px;}
+  to {left: 150px;}
 
 }
 
 @keyframes ball_move{
-  from {left: -500px;}
-  to {left: 500px;}
+  from {left: -150px;}
+  to {left: 150px;}
 } 
 
 #ball {
@@ -151,6 +151,17 @@ header{
 
  /* NEED TO FINISH */
 @media screen and (min-width: 850px){
+
+  @-webkit-keyframes ball_move{
+    from {left: 0px;}
+    to {left: 500px;}
+  
+  }
+  
+  @keyframes ball_move{
+    from {left: -500px;}
+    to {left: 500px;}
+  } 
 
 
   .footer {
