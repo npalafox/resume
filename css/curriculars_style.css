@@ -4,6 +4,25 @@ body {
   background: black;
   
  }
+@-webkit-keyframes ball_move{
+  from {left: 0px;}
+  to {left: 500px;}
+
+}
+
+@keyframes ball_move{
+  from {left: -500px;}
+  to {left: 500px;}
+} 
+
+#ball {
+  animation-name: ball_move;
+  position: relative;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+
+}
 
 p {
   padding: 40px;
@@ -126,9 +145,6 @@ header{
   display: grid;
 }
 
-img {
-  width: 100%;
-}
 
 
 
