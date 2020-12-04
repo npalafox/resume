@@ -46,6 +46,7 @@ input[type=submit]:hover {
 body {
   font-family: 'Cardo', serif;
   color: #c0ccd4;
+  background-color: black;
  }
  
 h1, h2, h3, h4, h5, h6 {
@@ -54,8 +55,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffce00;
 }
 
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffce00;
+  padding: 10px;
+}
+
 form {
-  border: 3px solid black;
+  border: 2px solid black;
+  border-style: round;
+  border-radius:25px;
+  background: #484d5c
+
 }
 
 legend{
@@ -66,11 +80,10 @@ legend{
   color: #ffce00;
 }
 
-#main{
-  background: #484d5c;
-  border: 3px solid black;
-  border-style: round;
+#ummcs, #snow {
+  display: none;
 }
+
 
 footer{
     background-color: black;
@@ -125,6 +138,11 @@ header{
 
 }
 
+a {
+  color: #ffce00;
+  font-size: large;
+}
+
 .nav_item a{
   color: #ffce00;
   font-size: larger;
@@ -145,11 +163,41 @@ img {
   width: 100%;
 }
 
+.information {
+  display: grid;
+  grid-template-rows: 1fr 60px 1fr;
+}
+
+#main {
+  grid-row: 3;
+}
+
+.thanks {
+  grid-row: 1;
+  border: 2px solid black;
+  border-style: round;
+  border-radius:25px;
+  background: #484d5c;
+}
+
+p {
+  padding: 40px;
+  font-size: larger;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #ffce00;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 
  /* NEED TO FINISH */
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1000px){
   header{
     flex-direction: row;
     justify-content: flex-end;
@@ -167,6 +215,47 @@ img {
     flex-direction: row;
     justify-content: space-around;
   }
+
+  #ummcs, #snow {
+    display:block;
+  }
+
+  .information {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px 1fr;
+    grid-template-rows: 1fr 20px 1fr;
+  }
+
+  
+  #main {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  
+  .thanks {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #ummcs {
+    background-image: url("ummcs.jpeg");
+    border: 2px solid black;
+    border-style: round;
+    border-radius:25px;
+    grid-column: 4;
+    grid-row: 1;
+  }
+ 
+  #snow {
+    background-image: url("snowboard.jpeg");
+    border: 2px solid black;
+    border-style: round;
+    border-radius:25px;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+
 }
   
 

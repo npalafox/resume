@@ -8,24 +8,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: #ffce00;
-}
-
-p {
-  padding-bottom:100px;
-  padding-left:100px;
-  padding-right: 100px;
-  font-size: larger;
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+
+p {
+  padding: 10px;
+  font-size: larger;
 }
 
 h1, h2{
   font-size: xx-large;
   padding: 25px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
 }
 
 ul {
@@ -155,6 +150,15 @@ img {
 
  /* NEED TO FINISH */
 @media screen and (min-width: 850px){
+
+  p {
+    padding-bottom:100px;
+    padding-left:100px;
+    padding-right: 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
 
 
   .information{
