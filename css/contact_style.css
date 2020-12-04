@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
  /* NEED TO FINISH */
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1250px){
   header{
     flex-direction: row;
     justify-content: flex-end;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .information {
     display: grid;
-    grid-template-columns: 30px 1fr 30px 1fr;
+    grid-template-columns: 30px 900px 30px 900px 30px;
     grid-template-rows: 1fr 20px 1fr;
   }
 
