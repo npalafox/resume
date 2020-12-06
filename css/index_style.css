@@ -8,6 +8,23 @@ p {
   font-size: larger;
 }
 
+.skip a:focus {
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  }
+
+
+.skip a{
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top:-40px;
+  color: #ffce00;
+}
 
 audio {
   display: block;
