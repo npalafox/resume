@@ -370,7 +370,15 @@ a {
 @media screen and (prefers-reduced-motion: reduce){
   #logo {
     animation: none;
+  }
+
+  html{
+    scroll-behavior: auto; /* Removes scroll animation */
+  }
+    
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+    }
   
   }
-  
-}
