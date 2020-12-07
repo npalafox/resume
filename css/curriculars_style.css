@@ -241,6 +241,11 @@ header{
 }
 
 @media screen and (prefers-reduced-motion: reduce){
+
+  #ball {
+    animation: none;
+  }
+  
   html{
       scroll-behavior: auto; /* Removes scroll animation */
   }
