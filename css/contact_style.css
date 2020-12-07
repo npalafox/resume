@@ -43,6 +43,24 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
+.skip a:focus {
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  }
+
+
+.skip a{
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top:-40px;
+  color: #ffce00;
+}
+
 body {
   font-family: 'Cardo', serif;
   color: #c0ccd4;
@@ -256,5 +274,17 @@ h1, h2, h3, h4, h5, h6 {
 
 
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  }
   
 
