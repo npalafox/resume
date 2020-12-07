@@ -78,6 +78,9 @@ audio {
 
 .flip-card-front {
   color: black;
+  border: 2px solid #ffce00;
+  border-radius:10px;
+  height: 60%;
 }
 
 .flip-card-back {
