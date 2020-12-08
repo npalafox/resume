@@ -74,7 +74,6 @@ ul {
   list-style-type: square;
 }
 li {
-  padding-bottom: 20px;
   font-size: larger;
 }
 
@@ -180,6 +179,10 @@ header{
     from {left: -500px;}
     to {left: 500px;}
   } 
+
+  li {
+    padding-bottom: 20px;
+  }
 
 
   .footer {
