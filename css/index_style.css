@@ -225,13 +225,12 @@ a {
   text-align: center;
 }
 
- /* NEED TO FINISH */
+ 
 @media screen and (min-width:700px) {
 
   #family-photos {
     padding-top: 100px;
   }
-
 
   header{
     flex-direction: row;
@@ -494,6 +493,12 @@ a {
       border: 2px solid #ffce00;
       border-style: round;
       border-radius:10px;
+    }
+
+
+    footer ul{
+      flex-direction: row;
+      justify-content: space-around;
     }
 
 }
